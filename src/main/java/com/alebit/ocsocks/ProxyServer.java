@@ -8,6 +8,7 @@ import java.io.IOException;
 public class ProxyServer {
     public static void start() {
         SocksProxyServer socksProxyServer = SocksProxyServerFactory.newNoAuthenticationServer(8080);
+        socksProxyServer.setBindPort(8080);
         try {
             socksProxyServer.start();
         } catch (IOException e) {
