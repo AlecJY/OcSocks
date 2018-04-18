@@ -1,0 +1,3 @@
+[submodule "libs/sockslib"]
+	path = libs/sockslib
+	url = https://github.com/fengyouchao/sockslib.git
