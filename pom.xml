@@ -7,22 +7,20 @@
     <groupId>com.alebit.ocsocks</groupId>
     <artifactId>OcSocks</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>libs/sockslib</module>
-    </modules>
-
     <dependencies>
         <dependency>
             <groupId>io.github.fengyouchao</groupId>
             <artifactId>sockslib</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/sockslib-1.0.0-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
 
@@ -51,7 +49,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jar-plugin</artifactId>
-                        <version>3.1.0</version>
                         <configuration>
                             <archive>
                                 <manifest>
