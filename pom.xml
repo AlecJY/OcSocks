@@ -7,6 +7,7 @@
     <groupId>com.alebit.ocsocks</groupId>
     <artifactId>OcSocks</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -50,6 +51,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.1.0</version>
                         <configuration>
                             <archive>
                                 <manifest>
